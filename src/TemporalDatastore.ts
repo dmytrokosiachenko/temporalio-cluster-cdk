@@ -71,7 +71,7 @@ export class AuroraServerlessTemporalDatastore extends Construct implements ITem
     }
 
     public get secret(): ISecret {
-        return this.databaseCluster.secret;
+        return this.databaseCluster.secret!;
     }
 
     public get connections(): Connections {
